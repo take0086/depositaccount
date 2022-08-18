@@ -1,0 +1,640 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+div{
+    animation-name:fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+a {
+    text-decoration: none;
+  }
+
+
+body{
+    width: 100%;
+    background-color:white;
+    font-family: 'Noto Sans JP';
+    margin: auto;
+}
+
+img{
+    width: 100%;
+}
+
+.sp-header-fixed{
+    max-height: 8rem;
+    border-bottom: min(4vw,3rem) solid #EB5505;
+}
+.sp-header-fixed a{
+    display: flex;
+}
+.sp-header-fixed img{
+    width: 64%;
+    max-width: 48rem;
+    margin: 2rem 0.6%;
+    display: inline-block;
+}
+
+/* ハンバーガーメニュー*/
+.drawer_hidden {
+    display: none;
+}
+.drawer_open {/* アイコンの設置位置 */
+    top: 5%;
+    right: 5rem;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 100;/* 重なり順を一番上にする */
+    cursor: pointer;
+}
+.drawer_open span,
+.drawer_open span:before,
+.drawer_open span:after {/* ハンバーガーメニューのアイコン */
+    content: '';
+    display: block;
+    height: 0.5rem;
+    width: 3.6rem;
+    border-radius: 0.3rem;
+    background: #333;
+    transition: 0.5s;
+    position: absolute;
+}
+.drawer_open span:before {/* 三本線の上の位置 */
+    bottom: 12px;
+}
+.drawer_open span:after {/* 三本線の下の位置 */
+    top: 12px;
+}
+#drawer_input:checked ~ .drawer_open span {/* アイコンがクリックされたら真ん中の線を透明にする */
+    background: rgba(255, 255, 255, 0);
+}
+#drawer_input:checked ~ .drawer_open span::before {/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#drawer_input:checked ~ .drawer_open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+.nav_content {/* メニューのデザイン*/
+    width: 30%;
+    height: 200px;
+    position: fixed;
+    top: 0;
+    left: 100%; /* メニューを画面の外に飛ばす */
+    z-index: 99;
+    background: #fff;
+    transition: .5s;
+}
+.nav_list {/* メニュー黒ポチを消す */
+    list-style: none;
+}
+#drawer_input:checked ~ .nav_content {/* アイコンがクリックされたらメニューを表示 */
+    left: 70%;/* メニューを画面に入れる */
+}
+
+
+
+
+
+
+.firstview{
+    position: relative;
+}
+.firstview-img{
+    max-width: 100%;
+    margin: auto;
+    max-height: 45rem;
+    object-fit: cover;
+}
+.depositaccount-logo{
+    position: absolute;
+    top:60%;
+    margin-left:45%;
+    width: 51%;
+    max-width: 38rem;
+    background-color: white;
+}
+.jibunbk-logo{
+    max-width: 15rem;
+    width: 22vw;
+    padding: 0.5rem 1rem;
+}
+h1{
+    font-size: min(8vw,60px);
+    padding-left: 0.5rem;
+    background-color: #EB5505;
+    letter-spacing: 1.3vw;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.satisfaction{
+    display: flex;
+    margin: min(6vw,5rem) auto;
+    max-height: 25rem;
+    max-width: 75rem;
+}
+.womansearch{
+    max-width: 28rem;
+    width: 37%;
+    height: 100%;
+}
+.satisfaction-text{
+    width: 47rem;
+}
+.satisfaction-text1{
+    width: 60vw;
+    max-width: 45rem;
+    background-color: #F2F2F2;
+    border-radius: 2rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5rem 0;
+}
+.black1{
+    font-size: min(2.9vw,2.2rem);
+}
+.black2{
+    font-size: min(2.1vw,1.6rem);
+}
+.black3{
+    font-size: min(3.3vw,2.5rem);
+}
+.satisfaction-text2{
+    float: left;
+    text-align: right;
+    font-size: min(4vw,3rem);
+    margin: min(2.6vw,2rem) min(2.6vw,2rem);
+    font-weight: bold;
+}
+.satisfaction-text3 {
+    display: inline-block;
+}
+.orange1{
+    color:#EB5505;
+    font-weight: bold;
+    font-size: min(5.3vw,4rem);
+}
+.orange2{
+    color:#EB5505;
+    font-weight: bold;
+    font-size: min(10vw,8rem);
+}
+.caution1{
+    font-size: min(1.6vw,1.2rem);
+    margin: auto;
+    width: min(48vw,36rem);
+}
+.caution1-1{
+    padding-left: min(8.3vw,3rem);
+    text-indent: min(-0.4vw,-3rem);
+}
+.caution1-2{
+    display: inline-block;
+    width: min(8.3vw,3rem);
+    text-indent: 0;
+}
+
+/*仮申込ボタン*/
+.accountopening p{
+    clear: both;
+    text-align: center;
+    font-size: min(4vw,3rem);
+}
+.accountopening-btn{
+    position:relative;
+    background-color:#EB5505;
+    border-radius: 4.8rem;
+    color: white;
+    max-width: 65rem;
+    width: 85%;
+    margin: auto;
+    box-shadow: 0.7rem 0.7rem 0 0 #9F3B03;
+    margin-bottom: 1rem;
+}
+.accountopening .link{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.accountopening-btn p{
+    font-size: min(6.4vw,4.8rem);
+    font-weight:bold;
+    letter-spacing: min(0.5vw,0.4rem);
+    padding: 1rem 0;
+}
+/*ボタンの右の「>」*/
+.btn1{
+    position: relative;
+}
+.btn1::before { /* 背景の表示設定 */
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: min(5.8vw,3.8rem);
+    width: min(6.7vw,4.4rem);
+    height: min(6.7vw,4.4rem);
+    border-radius: 50%; /* 角の丸み */
+    background: white;
+}
+.btn1::after { /* くの字の表示設定 */
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: min(8.3vw,5.4rem);
+    width: min(2.4vw,1.6rem);
+    height: min(2.4vw,1.6rem);
+    border-top: min(0.9vw,0.6rem) solid #EB5505;
+    border-right: min(0.9vw,0.6rem) solid #EB5505;
+    transform: rotate(45deg);
+}
+
+/*電話相談*/
+.telbtn{
+    position: relative;
+    background-color: #EB5505;
+    border-radius: 6rem;
+    color: white;
+    font-weight: bold;
+    margin: auto;
+    box-shadow: 7px 10px 0 0 #9f3b03;
+    text-align: center;
+    max-width: 65rem;
+    width: 85%;
+}
+.telbtn .link2{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.btn2{
+    font-size: min(7.3vw,4.8rem);
+    padding: 1rem 0 0 min(7.7vw,5rem);
+}
+.btn3{
+    font-size: min(4.6vw,3rem);
+    padding: 0 0 1rem min(7.7vw,5rem);
+}
+.telicon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: min(8.4vw,5.5rem);
+    margin: min(6.1vw,4rem) 0 0 min(6.9vw,4.5rem);
+}
+.teltime{
+    text-align: center;
+    font-size: min(3.2vw,2.4rem);
+    margin: 2rem 0 3rem 0;
+}
+
+h6{
+    text-align: right;
+    font-size: min(2.6vw,2rem);
+    font-weight: normal;
+    /* max-width: 65rem; */
+    margin: 0 auto 40px auto;
+    padding-left: 10px;
+    width: min(86vw,65rem);
+}
+
+
+/*ポイントヘッダー*/
+.pointtitle{
+    width: min(93vw,70rem);
+    height: min(34vw,25rem);
+    margin: min(1.3vw,10rem) auto 0 auto;
+    cursor: pointer;
+    position: relative;
+}
+.pointbody{
+    margin: auto;
+}
+.pointtitle::before,.pointtitle::after{
+    content: "";
+    display: block;
+    position: absolute;
+    /* top: 50%; */
+    /* right: 20px; */
+    /* transform: translate(0, -50%); */
+    width: min(4.6vw,3.5rem);
+    height: min(0.8vw,0.6rem);
+    background: rgba(218,95,41,1.0);
+    transition: 0.2s ease transform;
+}
+.pointtitle::before{
+    top:49%;
+    right: 2.8%;
+    transform: rotate(0deg);
+}
+.pointtitle::after{
+    top:49%;
+    right: 2.8%;
+    transform: rotate(0deg);
+}
+.pointtitle.show::after{
+    top:49%;
+    right: 2.8%;
+    transform: rotate(90deg);
+}
+.pointno{
+    width: min(26vw,20rem);
+    background-color: #EB5505;
+    font-size: min(3.4vw,2.4rem);
+    padding: min(5vw,1rem) 0;
+    color: white;
+    text-align: center;
+    border-radius: 1rem;
+    font-weight: normal;
+    z-index: 10000;
+    position: relative;
+}
+.pointtext{
+    position: absolute;
+    border: min(0.8vw,0.6rem) solid #EB5505;
+    border-radius: 2rem;
+    font-size: min(2.9vw,2.2rem);
+    margin-top: max(-6vw,-3rem);
+    padding: 5% 0 4.3% 24.3%;
+    line-height: min(8.5vw,6rem);
+    max-width: 70rem;
+    width: 74%;
+}
+.orange3{
+    background-color: #EB5505;
+    color: white;
+    border-radius: 2rem;
+    padding: 0.7% 2%;
+    margin-left: 2.2%;
+}
+.orange4{
+    color: #EB5505;
+    font-weight: bold;
+    font-size: min(6.8vw,4.8rem);
+    display: inline-block;
+}
+.pointimg{
+    float: left;
+    width: 18%;
+    margin: 1.4% 0 0 3.5%;
+}
+
+h2{
+    margin: min(4vw,0.4rem) auto;
+    width: 80%;
+    max-width: 60rem;
+    font-size: min(3.4vw,2.6rem);
+    font-weight: normal;
+}
+
+
+/*ポイント1の表*/
+.point1table1 table{
+    border-collapse: collapse;
+    width: 86%;
+    max-width: 65rem;
+    margin: auto;
+    text-align: center;
+    white-space: nowrap;
+    font-size: min(3vw,2rem);
+}
+.point1table1 th, .point1table1 td{
+    padding: 10px;
+    border: 1px solid rgb(25, 25, 25);
+}
+.point1table1 td{
+    width: 20%;
+}
+.torange{
+    background-color: #EB5505;
+    color: white;
+}
+.tsilver{
+    background-color: #BFBFBF;
+    color: white;
+}
+.tgold{
+    background-color: #EAB200;
+    color: white;
+}
+.tpurple{
+    background-color: #AA72D4;
+    color: white;
+}
+.orange5{
+    color:#EB5505;
+    font-size: min(3.7vw,2.4rem);
+    font-weight: bold;
+}
+.orange6{
+    color:#EB5505;
+    font-size: min(4.6vw,3rem);
+    font-weight: bold;
+}
+
+/*ポイント1の表2*/
+.point1table2 table{
+    border-collapse: collapse;
+    width: 86%; 
+    max-width: 65rem;
+    margin: min(5vw,4rem) auto;
+    font-size: min(3vw,2rem);
+}
+.point1table2 th, .point1table2 td{
+    padding: 20px;
+    border: 2px solid rgb(25, 25, 25);
+}
+.point1table2-header{
+    text-align: center;
+}
+.point1table2 th{
+    background-color: #F2F2F2;
+    text-align: center;
+    width: 25%;
+    font-weight: normal;
+}
+
+/*ポイント2の表*/
+.point2table table{
+    border-collapse: collapse;
+    width: 86%; 
+    max-width: 65rem;
+    font-size: min(3vw,2rem);
+    text-align: center;
+    margin: min(5vw,4rem) auto;
+    white-space: nowrap;
+}
+.point2table th, .point2table td{
+    padding: 10px;
+    border: 1px solid rgb(25, 25, 25);
+    width: 20%;
+}
+
+.caution2{
+    font-size: min(1.8vw,1.4rem);
+    margin: min(3.3vw,2.5rem) auto;
+    width: 80%;
+    max-width: 60rem;
+}
+.caution2-1{
+    padding-left: min(8.3vw,3rem);
+    text-indent: min(-0.4vw,-3rem);
+}
+.caution2-2{
+    display: inline-block;
+    width: min(8.3vw,3rem);
+    text-indent: 0;
+}
+
+
+/*ポイント3の表*/
+.tabletitle{
+    margin: 4% auto 0 auto;
+    font-weight: bold;
+    font-size: min(3.2vw,2.4rem);
+    max-width: 65rem;
+    width: 85%;
+}
+.point3table table{
+    border-collapse: collapse;
+    width: 86%;
+    max-width: 65rem;
+    font-size: min(2.2vw,1.4rem);
+    margin: 0 auto 1.5vw auto;
+}
+.point3table th, .point3table td{
+    padding: 10px;
+    border: 1px solid rgb(25, 25, 25);
+}
+.merging1{
+    border-bottom: 0px!important;
+}
+.merging2{
+    border-top: 0px!important;
+    writing-mode: tb-rl; 
+    white-space: nowrap;
+    text-align: center;
+    letter-spacing: 10px;
+}
+.tright{
+    text-align: right;
+    white-space: nowrap;
+}
+.tblack1{
+    display: inline-block;
+    font-size: min(4.3vw,2.8rem);
+    font-weight: bold;
+    transform: scale(0.9,1);
+}
+.table3-border{
+    font-size: min(4.6vw,3rem);
+}
+.orange7{
+    display: inline-block;
+    color:#EB5505;
+    font-size: min(4.6vw,3rem);
+    font-weight: bold;
+    transform: scale(0.9,1);
+}
+
+
+/*企業情報*/
+.corp-table table{
+    border-collapse: collapse;
+    width: 84%;
+    max-width: 63rem;
+    margin: auto;
+    text-align: left;
+    font-size: min(2.2vw,1.4rem);
+}
+.corp-table th,.corp-table td{
+    padding: 10px;
+    border: 1px solid black;
+}
+.corp-table th{
+    background-color: #E7E7E7;
+    text-align: center;
+    white-space: nowrap;
+    width: 35%;
+}
+.corp-table ul{
+    padding-left: 2rem;
+    text-align: left;
+}
+.corp-table-list1{
+    list-style:none;
+}
+.corp-table-list1 li{
+    padding-left:3rem; /* ケースによって調整する */
+	text-indent:-3rem; /* ケースによって調整する */
+}
+.corp-table-list1 span{
+    display: inline-block;
+	width: 3rem; /* ケースによって調整する */
+	text-indent: 0;
+}
+.corp-table-list2{
+    list-style:none;
+}
+.corp-table-list2 li{
+    padding-left:3rem; /* ケースによって調整する */
+	text-indent:-3rem; /* ケースによって調整する */
+}
+.corp-table-list2 span{
+    display: inline-block;
+	width: 3rem; /* ケースによって調整する */
+	text-indent: 0;
+}
+
+.disclosure{
+    width: 84%;
+    max-width: 63rem;
+    margin: 3rem auto 15rem auto;
+}
+.disclosure p{
+    font-size: min(2.6vw,2rem);
+}
+
+h5{
+    border-left: 0.8rem solid #EB5505;
+    font-size: min(4.2vw,3.2rem);
+    height: 8%;
+    max-height: 60rem;
+    width: 86%;
+    max-width: 65rem;
+    margin: auto;
+    padding: min(0.4vw,0.3rem) min(1.5vw,1rem);
+    margin-bottom: min(1.5vw,1rem);
+}
