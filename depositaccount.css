@@ -32,7 +32,7 @@ a {
 body{
     width: 100%;
     background-color:white;
-    font-family:'メイリオ', 'Meiryo', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+    font-family: 'Noto Sans JP';
     margin: auto;
 }
 
@@ -203,9 +203,9 @@ h1{
     font-size: min(10vw,8rem);
 }
 .caution1{
-    font-size: min(1.6vw,1.2rem);
     margin: auto;
-    width: min(48vw,36rem);
+    width: min(52vw,40rem);
+    font-size: min(3.1vw,2rem);
 }
 .caution1-1{
     padding-left: min(8.3vw,3rem);
