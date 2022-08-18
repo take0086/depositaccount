@@ -503,7 +503,7 @@ h2{
 }
 
 .caution2{
-    font-size: min(1.8vw,1.4rem);
+    font-size: min(3.1vw,2rem);
     margin: min(3.3vw,2.5rem) auto;
     width: 80%;
     max-width: 60rem;
@@ -594,6 +594,7 @@ h2{
     text-align: left;
 }
 .corp-table-list1{
+    font-size: min(3.1vw,2rem);
     list-style:none;
 }
 .corp-table-list1 li{
@@ -606,6 +607,7 @@ h2{
 	text-indent: 0;
 }
 .corp-table-list2{
+    font-size: min(3.1vw,2rem);
     list-style:none;
 }
 .corp-table-list2 li{
