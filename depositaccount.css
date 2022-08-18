@@ -32,7 +32,7 @@ a {
 body{
     width: 100%;
     background-color:white;
-    font-family: 'helvetia', serif;
+    font-family:'メイリオ', 'Meiryo', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
     margin: auto;
 }
 
