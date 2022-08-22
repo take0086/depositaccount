@@ -512,12 +512,12 @@ h2{
     max-width: 60rem;
 }
 .caution2-1{
-    padding-left: min(8.3vw,3rem);
-    text-indent: min(-0.4vw,-3rem);
+    padding-left: min(4vw,3rem);
+    text-indent: max(-4vw,-3rem);
 }
 .caution2-2{
     display: inline-block;
-    width: min(8.3vw,3rem);
+    width: min(4vw,3rem);
     text-indent: 0;
 }
 
