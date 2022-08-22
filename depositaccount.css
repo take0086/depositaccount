@@ -208,15 +208,15 @@ h1{
     margin: auto;
     width: min(52vw,40rem);
     font-size: min(3.1vw,2rem);
-    display: block;
+    display: inline-block;
 }
 .caution1-1{
-    padding-left: min(7.5vw,3rem);
-    text-indent: max(-7.5vw,-3rem);
+    padding-left: min(4vw,3rem);
+    text-indent: max(-4vw,-3rem);
 }
 .caution1-2{
     display: inline-block;
-    width: min(7.5vw,3rem);
+    width: min(4vw,3rem);
     text-indent: 0;
 }
 
