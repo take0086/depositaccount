@@ -34,7 +34,7 @@ a {
 body{
     width: 100%;
     background-color:white;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Sans JP' ,sans-serif;
     margin: auto;
 }
 
@@ -210,12 +210,12 @@ h1{
     font-size: min(3.1vw,2rem);
 }
 .caution1-1{
-    padding-left: min(7.5vw,3rem);
-    text-indent: max(-7.5vw,-3rem);
+    padding-left: min(8.3vw,3rem);
+    text-indent: min(-0.4vw,-3rem);
 }
 .caution1-2{
     display: inline-block;
-    width: min(7.5vw,3rem);
+    width: min(8.3vw,3rem);
     text-indent: 0;
 }
 
@@ -600,12 +600,12 @@ h2{
     list-style:none;
 }
 .corp-table-list1 li{
-    padding-left:min(4.7vw,3rem); /* ケースによって調整する */
-	text-indent:max(-4.7vw,-3rem); /* ケースによって調整する */
+    padding-left:3rem; /* ケースによって調整する */
+	text-indent:-3rem; /* ケースによって調整する */
 }
 .corp-table-list1 span{
     display: inline-block;
-	width: min(4.7vw,3rem); /* ケースによって調整する */
+	width: 3rem; /* ケースによって調整する */
 	text-indent: 0;
 }
 .corp-table-list2{
@@ -613,12 +613,12 @@ h2{
     list-style:none;
 }
 .corp-table-list2 li{
-    padding-left:min(4.7vw,3rem); /* ケースによって調整する */
-	text-indent:max(-4.7vw,-3rem); /* ケースによって調整する */
+    padding-left:3rem; /* ケースによって調整する */
+	text-indent:-3rem; /* ケースによって調整する */
 }
 .corp-table-list2 span{
     display: inline-block;
-	width: min(4.7vw,3rem); /* ケースによって調整する */
+	width: 3rem; /* ケースによって調整する */
 	text-indent: 0;
 }
 
