@@ -52,7 +52,7 @@ img{
 .sp-header-fixed img{
     width: 64%;
     max-width: 48rem;
-    margin: 2rem 0.6%;
+    margin: min(2.6vw,2rem) 4%;
     display: inline-block;
 }
 
