@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
 html, body,
 ul, ol, li,
 h1, h2, h3, h4, h5, h6, p, div {
@@ -32,7 +34,7 @@ a {
 body{
     width: 100%;
     background-color:white;
-    font-family: 'Noto Sans JP';
+    font-family: 'Noto Sans JP', sans-serif;
     margin: auto;
 }
 
@@ -598,12 +600,12 @@ h2{
     list-style:none;
 }
 .corp-table-list1 li{
-    padding-left:3rem; /* ケースによって調整する */
-	text-indent:-3rem; /* ケースによって調整する */
+    padding-left:min(4.7vw,3rem); /* ケースによって調整する */
+	text-indent:max(-4.7vw,-3rem); /* ケースによって調整する */
 }
 .corp-table-list1 span{
     display: inline-block;
-	width: 3rem; /* ケースによって調整する */
+	width: min(4.7vw,3rem); /* ケースによって調整する */
 	text-indent: 0;
 }
 .corp-table-list2{
@@ -611,12 +613,12 @@ h2{
     list-style:none;
 }
 .corp-table-list2 li{
-    padding-left:3rem; /* ケースによって調整する */
-	text-indent:-3rem; /* ケースによって調整する */
+    padding-left:min(4.7vw,3rem); /* ケースによって調整する */
+	text-indent:max(-4.7vw,-3rem); /* ケースによって調整する */
 }
 .corp-table-list2 span{
     display: inline-block;
-	width: 3rem; /* ケースによって調整する */
+	width: min(4.7vw,3rem); /* ケースによって調整する */
 	text-indent: 0;
 }
 
