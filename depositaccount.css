@@ -280,6 +280,9 @@ h1{
     border-right: min(0.9vw,0.6rem) solid #EB5505;
     transform: rotate(45deg);
 }
+.accountopening{
+    margin: min(8vw,6rem) 0;
+}
 
 /*電話相談*/
 .telbtn{
@@ -328,7 +331,7 @@ h6{
     font-size: min(2.6vw,2rem);
     font-weight: normal;
     /* max-width: 65rem; */
-    margin: 0 auto 40px auto;
+    margin: 0 auto;
     padding-left: 10px;
     width: min(86vw,65rem);
 }
