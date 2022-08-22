@@ -434,7 +434,7 @@ h2{
     font-size: min(3vw,2rem);
 }
 .point1table1 th, .point1table1 td{
-    padding: 10px;
+    padding: min(1.5vw,1rem);
     border: 1px solid rgb(25, 25, 25);
 }
 .point1table1 td{
@@ -476,7 +476,7 @@ h2{
     font-size: min(3vw,2rem);
 }
 .point1table2 th, .point1table2 td{
-    padding: 20px;
+    padding: min(3vw,2rem);
     border: 2px solid rgb(25, 25, 25);
 }
 .point1table2-header{
@@ -500,7 +500,7 @@ h2{
     white-space: nowrap;
 }
 .point2table th, .point2table td{
-    padding: 10px;
+    padding: min(1.5vw,1rem);
     border: 1px solid rgb(25, 25, 25);
     width: 20%;
 }
@@ -538,7 +538,7 @@ h2{
     margin: 0 auto 1.5vw auto;
 }
 .point3table th, .point3table td{
-    padding: 10px;
+    padding: min(1.5vw,1rem);
     border: 1px solid rgb(25, 25, 25);
 }
 .merging1{
@@ -583,7 +583,7 @@ h2{
     font-size: min(2.2vw,1.4rem);
 }
 .corp-table th,.corp-table td{
-    padding: 10px;
+    padding: min(1.5vw,1rem);
     border: 1px solid black;
 }
 .corp-table th{
@@ -593,7 +593,7 @@ h2{
     width: 35%;
 }
 .corp-table ul{
-    padding-left: 2rem;
+    padding-left: min(3.1vw,2rem);
     text-align: left;
 }
 .corp-table-list1{
