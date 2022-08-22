@@ -61,12 +61,12 @@ img{
     display: none;
 }
 .drawer_open {/* アイコンの設置位置 */
-    top: 5%;
-    right: 5rem;
+    top: min(4.6vw,3.5rem);
+    right: 8vw;
     justify-content: center;
     align-items: center;
     position: absolute;
-    z-index: 100;/* 重なり順を一番上にする */
+    z-index: 100;
     cursor: pointer;
 }
 .drawer_open span,
@@ -74,18 +74,18 @@ img{
 .drawer_open span:after {/* ハンバーガーメニューのアイコン */
     content: '';
     display: block;
-    height: 0.5rem;
-    width: 3.6rem;
+    height: min(0.6vw,0.5rem);
+    width: min(4.8vw,3.6rem);
     border-radius: 0.3rem;
     background: #333;
     transition: 0.5s;
     position: absolute;
 }
 .drawer_open span:before {/* 三本線の上の位置 */
-    bottom: 12px;
+    bottom: min(1.6vw,1.2rem);
 }
 .drawer_open span:after {/* 三本線の下の位置 */
-    top: 12px;
+    top: min(1.6vw,1.2rem);
 }
 #drawer_input:checked ~ .drawer_open span {/* アイコンがクリックされたら真ん中の線を透明にする */
     background: rgba(255, 255, 255, 0);
