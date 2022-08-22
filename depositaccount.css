@@ -550,6 +550,12 @@ h2{
     white-space: nowrap;
     text-align: center;
     letter-spacing: 10px;
+    width: 10%;
+}
+.verticalwriting{
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
 }
 .tright{
     text-align: right;
