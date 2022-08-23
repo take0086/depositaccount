@@ -347,6 +347,7 @@ h6{
 }
 .pointbody{
     margin: auto;
+    display: none;
 }
 .pointtitle::before,.pointtitle::after{
     content: "";
@@ -368,12 +369,12 @@ h6{
 .pointtitle::after{
     top:49%;
     right: 2.8%;
-    transform: rotate(0deg);
+    transform: rotate(90deg);
 }
 .pointtitle.show::after{
     top:49%;
     right: 2.8%;
-    transform: rotate(90deg);
+    transform: rotate(0deg);
 }
 .pointno{
     width: min(26vw,20rem);
@@ -490,6 +491,13 @@ h2{
     text-align: center;
     width: 25%;
     font-weight: normal;
+}
+
+
+.pointimg2{
+    float: left;
+    width: 25%;
+    margin: 1.4% 0 0 2%;
 }
 
 /*ポイント2の表*/
