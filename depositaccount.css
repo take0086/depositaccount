@@ -165,12 +165,13 @@ h1{
 }
 .satisfaction-text{
     width: 47rem;
+    text-align: center;
 }
 .satisfaction-text1{
     width: 60vw;
     max-width: 45rem;
     background-color: #F2F2F2;
-    border-radius: 2rem;
+    border-radius: min(2.6vw,2rem);
     text-align: center;
     font-weight: bold;
     padding: 0.5rem 0;
@@ -184,11 +185,12 @@ h1{
 .black3{
     font-size: min(3.3vw,2.5rem);
 }
+
 .satisfaction-text2{
     float: left;
     text-align: right;
     font-size: min(4vw,3rem);
-    margin: min(2.6vw,2rem) min(2.6vw,2rem);
+    margin: min(3.3vw,2.5rem) min(2.6vw,2rem);
     font-weight: bold;
 }
 .satisfaction-text3 {
@@ -200,15 +202,17 @@ h1{
     font-size: min(5.3vw,4rem);
 }
 .orange2{
-    color:#EB5505;
+    color: #EB5505;
     font-weight: bold;
     font-size: min(10vw,8rem);
+    line-height: min(12vw,9rem);
 }
 .caution1{
     margin: auto;
     width: min(52vw,40rem);
     font-size: min(3.1vw,2rem);
     display: inline-block;
+    text-align: left;
 }
 .caution1-1{
     padding-left: min(4vw,3rem);
@@ -330,7 +334,6 @@ h6{
     text-align: right;
     font-size: min(2.6vw,2rem);
     font-weight: normal;
-    /* max-width: 65rem; */
     margin: 0 auto;
     padding-left: 10px;
     width: min(86vw,65rem);
@@ -353,9 +356,6 @@ h6{
     content: "";
     display: block;
     position: absolute;
-    /* top: 50%; */
-    /* right: 20px; */
-    /* transform: translate(0, -50%); */
     width: min(4.6vw,3.5rem);
     height: min(0.8vw,0.6rem);
     background: rgba(218,95,41,1.0);
@@ -472,7 +472,7 @@ h2{
 }
 
 /*ポイント1の表2*/
-.point1table2 table{
+/*.point1table2 table{
     border-collapse: collapse;
     width: 86%; 
     max-width: 65rem;
@@ -492,14 +492,142 @@ h2{
     width: 25%;
     font-weight: normal;
 }
+*/
+.orangetitle{
+    text-align: center;
+    font-size: min(4vw,3rem);
+    color: #EB5505;
+    font-weight: bold;
+    margin-top: min(6.6vw,5rem);
+}
+.point1transactions{
+    margin: auto;
+    width: 93%;
+    max-width: 70rem;
+    text-align: center;
+}
+.transaction1{
+    float: left;
+    line-height: min(10.6vw,8rem);
+    border-radius: 50%;
+    background-color: #FBE5D6;
+    font-size: min(4vw,3rem);
+    font-weight: bold;
+    height: min(10.6vw,8rem);
+    padding: 0 min(4vw,3rem);
+    margin: min(4vw,3rem) min(1.3vw,1rem);
+}
+.transaction2{
+    position: relative;
+    float: left;
+    border-radius: 50%;
+    background-color: #FBE5D6;
+    font-size: min(4vw,3rem);
+    font-weight: bold;
+    height: min(10.6vw,8rem);
+    padding: 0 min(4vw,3rem);
+    margin: min(4vw,3rem) min(1.3vw,1rem);
+    width: min(9.3vw,7rem);
+}
+.transaction2 p{
+    position: absolute;
+    top: min(1.3vw,1rem);
+}
+.transaction3{
+    position: relative;
+    float: left;
+    border-radius: 50%;
+    background-color: #FBE5D6;
+    font-size: min(4vw,3rem);
+    font-weight: bold;
+    height: min(10.6vw,8rem);
+    padding: 0 min(4vw,3rem);
+    margin: min(4vw,3rem) min(1.3vw,1rem);
+    width: min(18.6vw,14rem);
+}
+.transaction3 p{
+    position: absolute;
+    top: min(1.3vw,1rem);
+}
 
+.clear {
+    clear: left;
+}
+.point1text{
+    width: 93%;
+    max-width: 70rem;
+    margin: min(1.3vw,1rem) auto;
+    font-size: min(2.6vw,2rem);
+}
+.jibunplus{
+    margin-top: min(4vw,3rem);
+    margin-bottom: min(8vw,6rem);
+}
+.jibunplus p{
+    text-align: center;
+    font-size: min(3.3vw,2.5rem);
+    margin: min(1.3vw,1rem);
+}
+.gray-btn{
+    position: relative;
+    background-color: #D9D9D9;
+    border: min(0.13vw,0.1rem) solid #A6A6A6;
+    border-radius: 4.8rem;
+    color: black;
+    max-width: 65rem;
+    width: 85%;
+    margin: auto;
+}
+.jibunplus .link{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.gray-btn p{
+    font-size: min(5.3vw,4rem);
+    font-weight: bold;
+    letter-spacing: min(0.5vw,0.4rem);
+}
+.btn4{
+    position: relative;
+}
+.btn4::before { /* 背景の表示設定 */
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: min(9vw,5.8rem);
+    width: min(4.5vw,3.4rem);
+    height: min(0.5vw,0.4rem);
+    border-top: min(0.9vw,0.6rem) solid black;
+    border-bottom: min(0.9vw,0.6rem) solid black;
+}
+.btn4::after { /* くの字の表示設定 */
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: min(8.3vw,5.4rem);
+    width: min(2.4vw,1.6rem);
+    height: min(2.4vw,1.6rem);
+    border-top: min(0.9vw,0.6rem) solid black;
+    border-right: min(0.9vw,0.6rem) solid black;
+    transform: rotate(45deg);
+}
 
+.point2{
+    clear: both;
+}
 .pointimg2{
     float: left;
     width: 25%;
     margin: 1.4% 0 0 2%;
 }
-
 /*ポイント2の表*/
 .point2table table{
     border-collapse: collapse;
@@ -515,7 +643,7 @@ h2{
     border: 1px solid rgb(25, 25, 25);
     width: 20%;
 }
-
+/*
 .caution2{
     font-size: min(3.1vw,2rem);
     margin: min(3.3vw,2.5rem) auto;
@@ -531,10 +659,35 @@ h2{
     width: min(4vw,3rem);
     text-indent: 0;
 }
-
+*/
+.point2text{
+    width: 86%;
+    max-width: 65rem;
+    margin: auto;
+    font-size: min(4vw,3rem);
+    margin-bottom: min(5.3vw,4rem);
+}
+.point2text p{
+    margin: min(1.3vw,1rem);
+}
+.atmdetails{
+    margin-top: min(4vw,3rem);
+    margin-bottom: min(8vw,6rem);
+}
+.atmdetails p{
+    text-align: center;
+}
+.atmdetails .link{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /*ポイント3の表*/
-.tabletitle{
+/*.tabletitle{
     margin: 4% auto 0 auto;
     font-weight: bold;
     font-size: min(3.2vw,2.4rem);
@@ -588,7 +741,33 @@ h2{
     font-weight: bold;
     transform: scale(0.9,1);
 }
+*/
 
+.point3orange{
+    color: #EB5505;
+}
+.point3img{
+    width: 93%;
+    max-width: 70rem;
+    margin: min(2.6vw,2rem) auto;
+    display: block;
+}
+.aukinri{
+    margin-top: min(4vw,3rem);
+    margin-bottom: min(8vw,6rem);
+}
+.aukinri p{
+    text-align: center;
+    font-size: min(4.2vw,3.2rem);
+}
+.aukinri .link{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /*企業情報*/
 .corp-table table{
