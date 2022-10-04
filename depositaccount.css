@@ -117,6 +117,151 @@ img{
 
 
 
+/* ------------------------------------------------------------------------- */
+
+#gnav-btn {
+    /* color: white; */
+    /* padding: 10px;
+    font-size: 30px; */
+    padding: min(1.3vw,1rem);
+    font-size: min(4vw,3rem);
+    margin: 0;
+    /* position: fixed; */
+    /* top: 10px; */
+    /* right: 10px; */
+    z-index: 100;
+    /* background-color: white;
+    border: solid 1px #d1caca;
+    border-radius: 3px; */
+    border: none;
+}
+#gnav-input:checked ~ #gnav-content {
+    /* top: 0; */
+    /* left: 30%; */
+    right: 0;
+}
+#gnav-content {
+    position: fixed;
+    /* top: -100%; */
+    /* left: 0; */
+    /* left: 100%; */
+    top: 0;
+    right: -100%;
+    z-index: 10;
+    transition: 0.3s;
+    width: 100%;
+    max-width: 750px;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    overflow-y: scroll; /* メニュー内容が多い場合に縦スクロールする */
+    height: 100%;
+    font-size: 24px;
+    /* background-image: url(http://www.financial-agency.com/service/wp-content/uploads/2022/09/pixta_71935431_L-1-scaled.jpg); */
+}
+.humb-menu__title {
+    padding: 40px;
+}
+.humb-menu label {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 30px;
+    cursor: pointer;
+    border-top: 1px solid white;
+    padding-left: 100px;
+}
+.humb-menu input {
+    display: none;
+}
+.humb-menu .accshow {
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.humb-menu .accshow p {
+    padding: 20px;
+    padding-left: 150px;
+    margin: 0 20px;
+    cursor: pointer;
+    border-top: 1px solid white;
+    transition: 0.3s;
+    font-size: 14px;
+}
+.humb-menu .cssacc:checked + .accshow {
+    height: auto;
+    transition: 0.3s;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+.humb-menu-switch{
+    cursor: pointer;
+    position: absolute;
+    right: 0%;
+    top: 0; /* ハンバーガーアイコンの位置（上から） */
+    z-index: 9999;
+    width: 2em; /* アイコン（クリック可能領域）の幅 */
+    height: 2em; /* アイコン（クリック可能領域の）高さ */
+}
+/* ハンバーガーアイコン */
+.humb-menu-line1, .humb-menu-line1-before, .humb-menu-line1-after{
+    width: min(3.3vw,2.5rem);
+    height: min(0.4vw,0.3rem);
+    background: #333; /* ハンバーガーアイコンの色 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: .3s;
+    content: "";
+}
+.humb-menu-line1{
+    transform: translate(-50%, -50%);
+}
+.humb-menu-line1-before{
+    transform: translate(-50%, -300%);
+}
+.humb-menu-line1-after{
+    transform: translate(-50%, 200%);
+}
+/* ハンバーガーアイコン･アニメーション */
+#gnav-input:checked ~ .humb-menu-switch .humb-menu-line1{
+    width: 0;
+}
+#gnav-input:checked ~ .humb-menu-switch .humb-menu-line1-before{
+    transform: rotate(45deg) translate(-40%, 325%);
+    background: white;
+}
+#gnav-input:checked ~ .humb-menu-switch .humb-menu-line1-after{
+    transform: rotate(-45deg) translate(-40%, -325%);
+    background: white;
+}
+
+#gnav-input:checked ~.humb-menu-switch{
+    position: fixed;
+}
+
+
+#gnav-content label img{
+    height: 44px;
+    width: auto;
+    position: absolute;
+    left: 75px;
+    margin: -10px;
+}
+
+.cssacc:checked + .accshow p::before{
+    content: "";
+    position: absolute;
+    margin: auto;
+    left: 120px;
+    width: 20px;
+    height: 20px;
+    border-top: 4px solid white;
+    border-right:4px solid white;
+    transform: rotate(45deg);
+}
+
+/* ------------------------------------------------------------------------ */
+
+
 
 
 
