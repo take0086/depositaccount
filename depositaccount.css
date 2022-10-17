@@ -195,8 +195,8 @@ h1{
     font-size: 0;
     width: 100%;
     margin: 0 auto;
-    height: 56vw;
-    background: no-repeat center center/100% url(http://www.financial-agency.com/service/wp-content/uploads/2022/10/depositaccount_sp-scaled.jpg);
+    height: 37vw;
+    background: no-repeat center center/100% url(http://www.financial-agency.com/service/wp-content/uploads/2022/10/depositaccount_pc-scaled.jpg);
 }
   
 /* satisfaction{----------------------------------------------------------------------- */
@@ -549,28 +549,6 @@ h2{
     font-weight: bold;
 }
 
-/*ポイント1の表2*/
-/*.point1table2 table{
-    border-collapse: collapse;
-    width: 86%; 
-    max-width: 65rem;
-    margin: min(5vw,4rem) auto;
-    font-size: min(3vw,2rem);
-}
-.point1table2 th, .point1table2 td{
-    padding: min(3vw,2rem);
-    border: 2px solid rgb(25, 25, 25);
-}
-.point1table2-header{
-    text-align: center;
-}
-.point1table2 th{
-    background-color: #F2F2F2;
-    text-align: center;
-    width: 25%;
-    font-weight: normal;
-}
-*/
 .orangetitle{
     text-align: center;
     font-size: min(4vw,3rem);
@@ -721,23 +699,6 @@ h2{
     border: 1px solid rgb(25, 25, 25);
     width: 20%;
 }
-/*
-.caution2{
-    font-size: min(3.1vw,2rem);
-    margin: min(3.3vw,2.5rem) auto;
-    width: 80%;
-    max-width: 60rem;
-}
-.caution2-1{
-    padding-left: min(4vw,3rem);
-    text-indent: max(-4vw,-3rem);
-}
-.caution2-2{
-    display: inline-block;
-    width: min(4vw,3rem);
-    text-indent: 0;
-}
-*/
 .orange7{
     background-color: #EB5505;
     color: white;
@@ -807,62 +768,6 @@ h2{
     height: 100%;
 }
 
-/*ポイント3の表*/
-/*.tabletitle{
-    margin: 4% auto 0 auto;
-    font-weight: bold;
-    font-size: min(3.2vw,2.4rem);
-    max-width: 65rem;
-    width: 85%;
-}
-.point3table table{
-    border-collapse: collapse;
-    width: 86%;
-    max-width: 65rem;
-    font-size: min(2.2vw,1.4rem);
-    margin: 0 auto 1.5vw auto;
-}
-.point3table th, .point3table td{
-    padding: min(1.5vw,1rem);
-    border: 1px solid rgb(25, 25, 25);
-}
-.merging1{
-    border-bottom: 0px!important;
-}
-.merging2{
-    border-top: 0px!important;
-    writing-mode: tb-rl; 
-    white-space: nowrap;
-    text-align: center;
-    letter-spacing: 10px;
-    width: 10%;
-}
-.verticalwriting{
-    -webkit-writing-mode: vertical-lr;
-    -ms-writing-mode: tb-lr;
-    writing-mode: vertical-lr;
-}
-.tright{
-    text-align: right;
-    white-space: nowrap;
-}
-.tblack1{
-    display: inline-block;
-    font-size: min(4.3vw,2.8rem);
-    font-weight: bold;
-    transform: scale(0.9,1);
-}
-.table3-border{
-    font-size: min(4.6vw,3rem);
-}
-.orange7{
-    display: inline-block;
-    color:#EB5505;
-    font-size: min(4.6vw,3rem);
-    font-weight: bold;
-    transform: scale(0.9,1);
-}
-*/
 
 .point3orange{
     color: #EB5505;
@@ -1097,6 +1002,13 @@ h2{
     }
     .header_logobox img {
       max-width: 244px;
+    }
+    h1{
+        /* font-size: 0;
+        width: 100%;
+        margin: 0 auto; */
+        height: 56vw;
+        background: no-repeat center center/100% url(http://www.financial-agency.com/service/wp-content/uploads/2022/10/depositaccount_sp-scaled.jpg);
     }
     .breadcrumbs {
       margin-top: 50px;
