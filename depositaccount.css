@@ -412,6 +412,10 @@ h6{
 }
 
 
+/* point----------------------------------------------------------------------- */
+.point{
+    margin: min(6.6vw,5rem) auto;
+}
 /*ポイントヘッダー*/
 .pointtitle{
     width: min(93vw,70rem);
@@ -508,10 +512,7 @@ h2{
     font-weight: normal;
 }
 
-/* point----------------------------------------------------------------------- */
-.point{
-    margin: min(6.6vw,5rem);
-}
+
 /*ポイント1の表*/
 .point1table1 table{
     border-collapse: collapse;
