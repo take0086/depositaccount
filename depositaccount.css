@@ -56,6 +56,7 @@ header {
     background-color: white;
     z-index: 10000;
     line-height: calc(0.25rem + 1em + 0.25rem);
+    font-family: "Noto Sans JP", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
     display: block;
 }
 .openbtn1 {
@@ -71,8 +72,9 @@ nav.flex {
     padding: 10px 30px
 }
 .header_logobox img {
-    max-height: 18px;
+    max-height: 25px;
     align-items: center;
+    padding-top: 3px;
 }
 .header_nav_lists a img {
     transition: all 0.3s;
@@ -88,10 +90,11 @@ nav.flex {
 }
 .header_nav_lists>li>a {
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-align: center;
     color: #eb5505;
     display: block;
+    width: 170px;
     padding: 0 15px;
     line-height: 4.0rem;
     border: 2px solid #eb5505;
@@ -109,9 +112,9 @@ nav.flex {
 .has_child {
     position: relative;
 }
-.header_nav_lists>li.has_child> a {
+/* .header_nav_lists>li.has_child> a {
     padding-right: 30px;
-}
+} */
 .cursel {
     cursor: pointer;
 }
@@ -204,6 +207,7 @@ h1{
     display: flex;
     margin: min(6vw,5rem) auto;
     max-width: 75rem;
+    width: 95%;
 }
 .wstext{
     font-size: min(2.6vw,2rem);
@@ -453,7 +457,7 @@ h6{
     text-align: center;
     border-radius: 1rem;
     font-weight: normal;
-    z-index: 10000;
+    z-index: 5;
     position: relative;
 }
 .pointtext{
@@ -504,7 +508,10 @@ h2{
     font-weight: normal;
 }
 
-
+/* point----------------------------------------------------------------------- */
+.point{
+    margin: min(6.6vw,5rem);
+}
 /*ポイント1の表*/
 .point1table1 table{
     border-collapse: collapse;
@@ -801,6 +808,7 @@ h2{
 .corporate-info{
     margin-top: min(13vw,10rem);
     max-width: 65rem;
+    width: 83%;
     margin: auto;
   }
   .corp-table table{
@@ -1058,3 +1066,31 @@ h2{
     display: block;
     }
   }
+
+
+/* ---------------------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 1020px) and (max-width: 1470px) {
+    .header_nav_lists>li.has_child> a{
+      padding-right: 30px;
+    }
+    .header_nav_lists>li>a{
+      width: auto;
+      padding: 0 15px;
+      font-size: 1.4rem;
+    }
+    .logo_icon {
+      bottom: 40px;
+      transform: translate(0, 0);
+    }
+    .header_logobox img {
+      max-height: 18px;
+    }
+    .nav_children li a {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      padding: 10px 10px;
+      text-align: left;
+      display: block;
+    }
+}
